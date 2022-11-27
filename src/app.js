@@ -2,7 +2,8 @@ require("dotenv").config()
 const express=require("express");
 const app=express();
 const path=require("path");
-const port=5000 || process.env.PORT;
+const port=process.env.PORT;
+
 
 // app.use(express.static('./src/public'));
 
