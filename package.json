@@ -7,7 +7,7 @@
     "nodemon": "^2.0.20"
   },
   "scripts": {
-    "start": "node ./src/index.js",
+    "start": "node ./src/app.js",
     "test": "mocha ./src/test.js"
   },
   "devDependencies": {
