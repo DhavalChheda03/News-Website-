@@ -141,4 +141,3 @@ async function getNews(url) {
     console.log(data);
 }
 
-module.exports={activelink};
