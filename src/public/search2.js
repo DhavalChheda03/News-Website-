@@ -138,7 +138,7 @@ function getNews(url,keywords,category,sortBy) {
 
 function setData(keywords,category,sortBy){
     var data;
-    if(keywords!="None")
+    if(category!="None")
     {
         if(category==="General")
         {
