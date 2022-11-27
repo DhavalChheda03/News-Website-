@@ -1,13 +1,8 @@
 let chai=require("chai");
 let chaiHttp=require("chai-http");
 let server=require("./app");
-let { JSDOM } = require('jsdom');
 let { expect } = require("chai");
 const { listeners } = require("./app");
-// let { getNews } = require("./public/newsfeed");
-const API_KEY = `4133a954c08249019e6f221dc4e9b1b8`;
-const api_url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
-
 chai.should();
 chai.use(chaiHttp);
 
