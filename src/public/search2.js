@@ -118,7 +118,12 @@ function search(){
 }
 function getNews(url,keywords,category,sortBy) {
     var newsHtml;
-    var data=setData(keywords,category,sortBy);
+    var data=setData(keywords,category);
+    console.log("--------");
+    console.log(keywords);
+    console.log(category);
+    console.log(sortBy);
+    console.log("--------");
     // console.log(data);
     let articles=data.articles;
     articles.forEach((element)=>{
@@ -136,60 +141,72 @@ function getNews(url,keywords,category,sortBy) {
     newsfeed.innerHTML=newsHtml; 
 }
 
-function setData(keywords,category,sortBy){
+function setData(keywords,category){
     var data;
     if(category!="None")
     {
         if(category==="General")
         {
             data=General;
+            console.log("1");
         }
         if(category==="Business")
         {
             data=Business;
+            console.log("2");
         }
         if(category==="Entertainment")
         {
-            data=Entertainment;
+            data=Entertainment
+            console.log("3");;
         }
         if(category==="Health")
         {
             data=Health;
+            console.log("4");
         }
         if(category==="Science")
         {
             data=Science;
+            console.log("5");
         }
         if(category==="Sports")
         {
             data=Sports;
+            console.log("6");
         }
         if(category==="Technology")
         {
             data=Technology;
+            console.log("7");
         }
     }
     else
     {
-        if(keywords="tesla")
+        if(keywords==="tesla")
         {
             data=tesla;
+            console.log("8");
         }
-        if(keywords="bitcoin")
+        if(keywords==="bitcoin")
         {
             data=bitcoin;
+            console.log("9");
         }
-        if(keywords="cricket")
+        if(keywords==="cricket")
         {
             data=cricket;
+            console.log("10");
         }
-        if(keywords="apple")
+        if(keywords==="apple")
         {
             data=apple;
+            console.log("11");
         }
-        if(keywords="none")
+        if(keywords==="none")
         {
             data=General;
+            console.log("12");
         }
     }
     return data;
