@@ -1,6 +1,5 @@
-const API_KEY = `pub_13924d1664e009f467c9aada522e478c31e70`;
-const api_url = `https://newsdata.io/api/1/news?country=in&language=en&apikey=pub_13924d1664e009f467c9aada522e478c31e70`;
-// "https://newsapi.org/v2/top-headlines?country=in&apiKey=4133a954c08249019e6f221dc4e9b1b8"
+const API_KEY = `4133a954c08249019e6f221dc4e9b1b8`;
+const api_url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
 
 const data={
     "status": "ok",

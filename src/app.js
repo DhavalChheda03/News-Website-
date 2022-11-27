@@ -22,9 +22,6 @@ app.get('/searchnews', (req, res)=>{
 app.all('*',(req,res)=>{
    res.status(404).send("resource not found");
 })
-// app.get('/', (req, res)=>{
-//    res.status(200).send("Success")
-// });
 
 module.exports =app.listen(port,()=>{
    console.log(`server listening on port ${port}...`);

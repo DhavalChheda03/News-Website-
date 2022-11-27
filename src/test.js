@@ -53,15 +53,3 @@ describe("Get/anyOtherPage",()=>{
             });
     });
 });
-
-// describe("Get /",()=>{
-
-//     it("it should be successfull",(done)=>{
-//         chai.request(server)
-//             .get("/")
-//             .end((err,res)=>{
-//                 res.should.have.status(200);
-//                 done();
-//             });
-//     });
-// });
