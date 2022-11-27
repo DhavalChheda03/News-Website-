@@ -23,6 +23,6 @@
   "license": "ISC",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "mocha test.js"
+    "test": "mocha ./test.js"
   }
 }
