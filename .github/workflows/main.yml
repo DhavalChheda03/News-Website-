@@ -30,6 +30,8 @@ jobs:
           heroku_api_key: "226d7c1b-a23f-44ad-8130-aae05a31375b"
           heroku_app_name: "instanews"
           heroku_email: "dhavalchheda03@gmail.com"
+        env: 
+          PORT: 5000  
 
 
     
