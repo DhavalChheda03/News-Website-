@@ -31,16 +31,16 @@ chai.use(chaiHttp);
 //   })
 //   })
 
-//   describe("GET /airports", function () {
-//     it("returns all airports, limited to 30 per page", async function () {
-//       const response = await axios.get("https:/newsapi.org/v2/top-headlines?country=in&apiKey=4133a954c08249019e6f221dc4e9b1b8");
-//     //   console.log(response);
-//     //   const articles=response.articles;
-//     //   console.log(articles);
-//         expect(response).to.not.be.undefined;
-//         expect(response).to.have.status(200);
-//     });
-//   });
+  describe("GET /airports", function () {
+    it("returns all airports, limited to 30 per page", async function () {
+      const response = await axios.get("https:/newsapi.org/v2/top-headlines?country=in&apiKey=4133a954c08249019e6f221dc4e9b1b8");
+    //   console.log(response);
+    //   const articles=response.articles;
+    //   console.log(articles);
+        expect(response).to.not.be.undefined;
+        expect(response).to.have.status(200);
+    });
+  });
 
 // describe("GET /airports", function () {
 //     it("returns all airports, limited to 30 per page", async function () {
